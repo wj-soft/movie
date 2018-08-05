@@ -19,7 +19,7 @@ export const getMovieList = async () => {
 // Page : Integer (Unsigned)
 
 // 옵션값에 따른 필터링
-export const getMovieListBySort = async (option, order='desc', limit =10, page=1) => {
+export const getMovieListBySort = async (option='title', order='desc', limit =20, page=1) => {
   let result;
   // Option : String(title, year, rating, peers, seeds, download_count, like_count, date_added)
   await axios.get(`${base_url_list}?sort=${option}&order=${order}&limit=${limit}&page=${page}`).then((response) => {
@@ -29,7 +29,7 @@ export const getMovieListBySort = async (option, order='desc', limit =10, page=1
 }
 
 //장르값에 따른 필터링
-export const getMovieListByGenre = async (genre, order = 'desc', limit = 10, page = 1) => {
+export const getMovieListByGenre = async (genre, order = 'desc', limit = 20, page = 1) => {
   let result;
   // Genre : comedy, sci-fi, horror, romance, action, thriller, drama, mystery, crime, animation, adventure, fantasy comedy-romance, action-comedy, superhero
   await axios.get(`${base_url_list}?genre=${genre}&order=${order}&limit=${limit}&page=${page}`).then((response) => {

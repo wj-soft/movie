@@ -1,0 +1,17 @@
+{
+  "코미디" : "comedy", 
+  "SF" : "sci-fi", 
+  "호러" : "horror", 
+  "로맨스" : "romance", 
+  "액션" : "action", 
+  "스릴러" : "thriller", 
+  "드라마" : "drama", 
+  "미스테리" : "mystery", 
+  "범죄" : "crime", 
+  "애니메이션" : "animation", 
+  "어드벤처" : "adventure", 
+  "판타지" : "fantasy",
+  "로맨틱코미디" : "comedy-romance", 
+  "액션코미디" : "action-comedy", 
+  "슈퍼히어로" : "superhero"
+}

@@ -1,16 +1,16 @@
 <template>
   <v-container fluid>
-    <hello-world></hello-world>
+    <list-container></list-container>
   </v-container>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
+import ListContainer from '@/components/ListContainer.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    ListContainer
   }
 }
 </script>
